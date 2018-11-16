@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class AuthService {
@@ -51,18 +50,18 @@ export class AuthService {
     });
   }
 
-  doRegister(value) {
+  doRegister(email: string , password: string) {
     return new Promise<any>((resolve, reject) => {
-      firebase.auth().createUserWithEmailAndPassword(value.email, value.password)
+      firebase.auth().createUserWithEmailAndPassword(email, password)
       .then(res => {
         resolve(res);
       }, err => reject(err));
     });
   }
 
-  doLogin(value) {
+  doLogin(email: string , password: string) {
     return new Promise<any>((resolve, reject) => {
-      firebase.auth().signInWithEmailAndPassword(value.email, value.password)
+      firebase.auth().signInWithEmailAndPassword(email, password)
       .then(res => {
         resolve(res);
       }, err => reject(err));
@@ -72,7 +71,7 @@ export class AuthService {
   doLogout() {
     return new Promise((resolve, reject) => {
       if (firebase.auth().currentUser) {
-        firebase.auth().signOut()
+        firebase.auth().signOut();
         resolve();
       } else {
         reject();

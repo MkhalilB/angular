@@ -58,8 +58,10 @@ export class SingUpComponent implements OnInit {
       );
   }
 
-  tryRegister(value) {
-    this.authService.doRegister(value)
+  tryRegister() {
+    const email = this.registerForm.get('email').value;
+    const password = this.registerForm.get('password').value;
+    this.authService.doRegister(email , password)
       .then(res => {
         console.log(res);
         this.errorMessage = '';

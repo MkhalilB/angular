@@ -8,14 +8,15 @@ import * as firebase from 'firebase';
 })
 export class AppComponent {
   title = 'project-angular6-firebase';
-  constructor (){
-    let config = {
-      apiKey: "AIzaSyCi8OKfqmyWnosMalgPXS5FG9_Fsc8szeA",
-      authDomain: "angular-firebase-89def.firebaseapp.com",
-      databaseURL: "https://angular-firebase-89def.firebaseio.com",
-      projectId: "angular-firebase-89def",
-      storageBucket: "angular-firebase-89def.appspot.com",
-      messagingSenderId: "588098331147"
+  public test = false;
+  constructor () {
+    const config = {
+      apiKey: 'AIzaSyCi8OKfqmyWnosMalgPXS5FG9_Fsc8szeA',
+      authDomain: 'angular-firebase-89def.firebaseapp.com',
+      databaseURL: 'https://angular-firebase-89def.firebaseio.com',
+      projectId: 'angular-firebase-89def',
+      storageBucket: 'angular-firebase-89def.appspot.com',
+      messagingSenderId: '588098331147'
     };
     firebase.initializeApp(config);
   }
