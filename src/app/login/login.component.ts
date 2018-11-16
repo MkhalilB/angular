@@ -29,14 +29,13 @@ export class LoginComponent implements OnInit {
   tryLog() {
     const email = this.loginForm.get('email').value;
     const password = this.loginForm.get('password').value;
-    const test: boolean ;
     this.authService.doLogin(email , password)
       .then(res => {
         console.log(res);
         this.errorMessage = '';
         this.successMessage = 'conected';
         console.log('succes');
-        this.test = true;
+        
       }, err => {
         console.log(err);
         this.errorMessage = err.message;
