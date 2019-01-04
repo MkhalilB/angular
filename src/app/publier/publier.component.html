@@ -1,0 +1,27 @@
+ 
+ <h1>OFFRE</h1>
+<body>
+ <div style="background-color: azure; width: 18%;" *ngFor='let offre of offres;'>
+<section>
+ 
+  <aside>
+     
+      <p>{{offre.id_entreprise}} </p>
+      <p>{{offre.nom}}</p>
+       <p> {{offre.profil}}</p>
+       <p> {{offre.salaire}}</p>  
+       <p> {{offre.contrat}}</p>  
+
+
+  </aside> 
+
+  <article>
+ 
+    <p> {{offre.description}}</p>  
+
+</article>
+  <!--input type="submit" value="Ajouter"-->
+  <button class="w3-button w3-red">Appliquer</button>
+</section>
+</div>
+</body>

@@ -12,6 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import {AuthService} from './Services/auth.service';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AnnoncesComponent } from './annonces/annonces.component';
+import { PublierComponent } from './publier/publier.component';
+import { ProfilsComponent } from './profils/profils.component';
+import { OffresService } from './Services/offres.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AcRecruteurComponent,
     AcCondidatsComponent,
     OffreEmploitComponent,
-    LoginComponent
+    LoginComponent,
+    AnnoncesComponent,
+    PublierComponent,
+    ProfilsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     AppRoutingModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, OffresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,7 +9,7 @@ import * as firebase from 'firebase';
 export class AppComponent {
   title = 'project-angular6-firebase';
   public test = false;
-  constructor () {
+  /*constructor () {
     const config = {
       apiKey: 'AIzaSyCi8OKfqmyWnosMalgPXS5FG9_Fsc8szeA',
       authDomain: 'angular-firebase-89def.firebaseapp.com',
@@ -19,5 +19,9 @@ export class AppComponent {
       messagingSenderId: '588098331147'
     };
     firebase.initializeApp(config);
-  }
+  }*/
+
+  
+
+
 }

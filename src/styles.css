@@ -2,11 +2,29 @@
 /* @import '~bootstrap/dist/css/bootstrap.min.css'; */
 @import url('https://fonts.googleapis.com/css?family=Numans');
 html,body{
-    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+
+    /*img style="-webkit-user-select: none;cursor: zoom-in;
+    " src="https://cdn.gplvault.com/wp-content/uploads/css-igniter-specialty.png
+    " width="657" height="657">*/
+
+   /* background-image: url('); //font-family: 'Numans', sans-sert;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
-    font-family: 'Numans', sans-serif;
+    background-repeat: no-repeaif;*/
+    background-image: url('https://www.downgraf.com/wp-content/uploads/2014/12/01-Alternate-Fixed-And-Scroll-Backgrounds.jpg');
+    
+    
+    background-size: cover;
+    background-repeat: no-repeaif;
+    height: 100%;
+    /*style: margin-top: 86px*
+    alt="Image associée"
+   
+
+
+
+    /*<img class="irc_mi" src="https://www.downgraf.com/wp-content/uploads/2014/12/01-Alternate-Fixed-And-Scroll-Backgrounds.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" 
+    width="304" height="182" style="margin-top: 86px;" alt="Image associée">*/
     }
     
     .container{
