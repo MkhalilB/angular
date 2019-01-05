@@ -1,36 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
 @import url('https://fonts.googleapis.com/css?family=Numans');
 html,body{
-
-    /*img style="-webkit-user-select: none;cursor: zoom-in;
-    " src="https://cdn.gplvault.com/wp-content/uploads/css-igniter-specialty.png
-    " width="657" height="657">*/
-
-   /* background-image: url('); //font-family: 'Numans', sans-sert;
-    background-size: cover;
-    height: 100%;
-    background-repeat: no-repeaif;*/
-    background-image: url('https://www.downgraf.com/wp-content/uploads/2014/12/01-Alternate-Fixed-And-Scroll-Backgrounds.jpg');
-    
-    
+    background-image: url('https://www.downgraf.com/wp-content/uploads/2014/12/01-Alternate-Fixed-And-Scroll-Backgrounds.jpg'); 
     background-size: cover;
     background-repeat: no-repeaif;
     height: 100%;
-    /*style: margin-top: 86px*
-    alt="Image associée"
-   
-
-
-
-    /*<img class="irc_mi" src="https://www.downgraf.com/wp-content/uploads/2014/12/01-Alternate-Fixed-And-Scroll-Backgrounds.jpg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" 
-    width="304" height="182" style="margin-top: 86px;" alt="Image associée">*/
-    }
+}
     
     .container{
     height: 100%;
     align-content: center;
     }
+    .input[type=submit] {
+        background-color:orangered;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+      }
     
     .card{
     height: 370px;
@@ -88,7 +76,7 @@ html,body{
     
     .login_btn{
     color: black;
-    background-color: #FFC312;
+    background-color: rgba(255, 73, 18, 0.952);
     width: 100px;
     }
     

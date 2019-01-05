@@ -11,6 +11,7 @@ import { PublierComponent } from './publier/publier.component';
 import { ProfilsComponent } from './profils/profils.component';
 
 
+
 // Configuration des URLs
 const routes: Routes = [
   { path: 'offre' , component: OffreEmploitComponent},
@@ -19,7 +20,7 @@ const routes: Routes = [
   { path: 'ac-condidats' , component: AcCondidatsComponent},
   { path: 'sing-up' , component: SingUpComponent},
   { path: 'login' , component: LoginComponent},
-  { path: 'annonces' , component: AnnoncesComponent},
+  { path: 'annonce' , component: AnnoncesComponent},
   { path: 'publier' , component: PublierComponent},
   { path: 'profils' , component: ProfilsComponent },
   

@@ -1,4 +1,4 @@
-<div class="page-container">
+<div class="container">
        
   
   
@@ -11,6 +11,9 @@
       <input type="text" name="tele" formControlName="tele" class="Tele" placeholder="Number Phone">
       <input type="text" name="email" formControlName="email" class="Email" placeholder="Email">
       <input type="password" name="password" formControlName="password" class="Address" placeholder="password">
-    <button type="submit" (click)="tryRegister()" class="btn btn-default">Register</button>
+       
+        <button  type="submit" (click)="tryRegister()" class="btn btn-default" routerLink="login">Register</button>
+      
+      
   </form>
 </div>
