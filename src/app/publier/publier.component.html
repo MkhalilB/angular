@@ -1,7 +1,7 @@
  
  <h1>OFFRE</h1>
-<body>
- <div style="background-color: azure; width: 18%;" *ngFor='let offre of offres;'>
+
+ <!--div style="background-color: azure; width: 18%;" *ngFor='let offre of offres;'>
 <section>
  
   <aside>
@@ -20,8 +20,48 @@
     <p> {{offre.description}}</p>  
 
 </article>
-  <!--input type="submit" value="Ajouter"-->
-  <button class="w3-button w3-red">Appliquer</button>
+  <input type="submit" value="Ajouter"-->
+  <!--button class="w3-button w3-red">Appliquer</button>
 </section>
-</div>
-</body>
+</div-->
+<body>
+<div class="wrap" *ngFor='let offre of offres'; >
+  <div class="table">
+  <ul>
+    
+  <li>
+    <div class="top">
+      <h1>STARTER</h1>
+      <div class="circle">$19</div>
+    </div>
+    <div class="bottom">
+      <p><span>5</span> users</p>
+      <p><span>10</span> projects</p>
+      <p><span>10GB</span> amount of space</p>
+      <p><span>5</span> e-mail accounts</p>
+      <div class="sign">
+      <a href='#' class='button'>SIGN UP</a>
+      </div>
+    </div>
+  </li>
+    
+  <li>
+    <div class="top">
+      <h1>BASIC</h1>
+      <div class="circle">$29</div>
+    </div>
+      <div class="bottom">
+      <p><span>10</span> users</p>
+      <p><span>50</span> projects</p>
+      <p><span>50GB</span> amount of space</p>
+      <p><span>10</span> e-mail accounts</p>
+      <div class="sign">
+      <a href='#' class='button'>SIGN UP</a>
+      </div>
+    </div>
+  </li>
+    
+  </ul>
+  </div>
+  </div>
+  </body>

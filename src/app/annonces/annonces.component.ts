@@ -41,5 +41,6 @@ idU:string;
     const newOffre = new Offre(this.idU , nom , profil, salaire, contrat, description);
     this.offresService.createNewOffre(newOffre);
     this.router.navigate(['/offres']);
+    console.log( this.offreeForm.get('salaire').value);
   }
 }

@@ -7,6 +7,8 @@ import {LoginComponent} from '../login/login.component';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  isAuth=true;
+
   constructor() {
   }
 

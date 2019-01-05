@@ -1,6 +1,6 @@
 
 /* Corps */
-
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700);
 table
 {
     background-color: aliceblue
@@ -82,3 +82,6 @@ aside img
    input[type=submit]:hover {
     background-color:green;
   }
+
+  
+
